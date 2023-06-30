@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 const rabbitSettings = {
   protocol: "amqp",
-  hostname: "44.208.72.218",
+  hostname: "54.226.88.234",
   port: 5672,
   username: "llaverito",
   password: "sainz097",
