@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 const rabbitSettings = {
   protocol: "amqp",
-  hostname: "44.216.12.148",
+  hostname: "3.221.47.178",
   port: 5672,
   username: "llaverito",
   password: "sainz097",
@@ -21,7 +21,7 @@ async function connect() {
       const messageContent = msn.content.toString();
       console.log(messageContent);
       try {
-        const response = await fetch('http://44.216.12.148:3003/products/', {
+        const response = await fetch('http://localhost:3003/products/', {
           method: 'POST',
           body: messageContent,
           headers: { 'Content-Type': 'application/json' }
